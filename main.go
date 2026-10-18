@@ -20,6 +20,6 @@ func main() {
 func basicHandler(w http.ResponseWriter, r *http.Request) {
 	_, err := w.Write([]byte("Hello World"))
 	if err != nil {
-		fmt.Println("Error writing response:", err)
+		fmt.Println("Error in responding:", err)
 	}
 }
