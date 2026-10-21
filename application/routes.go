@@ -16,6 +16,7 @@ func (a *App) loadRoutes() *chi.Mux {
 	})
 	router.Route("/routes", a.loadOrderRoutes)
 	a.router = router
+	return router
 }
 
 func (a *App) loadOrderRoutes(router chi.Router) {
